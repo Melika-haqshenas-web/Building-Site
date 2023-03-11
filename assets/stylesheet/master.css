@@ -1,0 +1,376 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  width: 100%;
+  /* overflow-x: hidden; */
+  font-size: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.row, .gallery > .block > div::after, .gallery > .block > div, .gallery > div:nth-of-type(1), .gallery > span, .midel > div:nth-of-type(4) > span, .midel > div:nth-of-type(4) > div:nth-of-type(1), .midel > div:nth-of-type(1), .midel > span, .headbox, .box, .topmenu > ul > li > a::after, .topmenu > ul > li, .topmenu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.font, .gallery > .block > div::after, .gallery > div:nth-of-type(1) > a, .gallery > span > h2, .midel > div:nth-of-type(4) > span > a, .midel > div:nth-of-type(4) > h5, .midel > div:nth-of-type(4) > h2, .midel > div:nth-of-type(1) > a, .midel > span > h2, .textbox > h6, .headbox > h2 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(78, 78, 242);
+  position: relative;
+}
+
+.topmenu > ul {
+  height: 100px;
+}
+.topmenu > ul > li {
+  width: 100px;
+  margin: 0 20px;
+}
+.topmenu > ul > li > a {
+  font-size: 2vw;
+  color: white;
+  position: relative;
+}
+.topmenu > ul > li > a::after {
+  content: "";
+  width: 125px;
+  border: 1px solid white;
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  opacity: 0;
+  transition: 1s;
+}
+.topmenu > ul > li > a:hover {
+  color: black;
+}
+.topmenu > ul > li > a:hover::after {
+  opacity: 1;
+}
+
+.logo > i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  font-size: 3vw;
+  color: white;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px 50px;
+  width: 15%;
+  height: 5%;
+  border: 2px solid white;
+  box-shadow: none;
+  transition: 1s;
+}
+.box > a {
+  color: white;
+  text-transform: uppercase;
+}
+.box:hover {
+  transform: perspective(800px) rotateY(360deg);
+  box-shadow: 0 0 20px 20px blueviolet;
+  border: 0;
+}
+.box:hover > a {
+  color: black;
+}
+
+.imgbox {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.imgbox > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.headbox {
+  position: absolute;
+  left: 125px;
+  bottom: 400px;
+  flex-wrap: nowrap;
+}
+.headbox > h2 {
+  font-size: 8vw;
+}
+.headbox > h2:nth-of-type(1) {
+  border: 5px solid gold;
+}
+
+.textbox > h6 {
+  position: absolute;
+  left: 125px;
+  bottom: 250px;
+  font-size: 20px;
+  color: rgba(255, 217, 0, 0.815);
+}
+.textbox > p {
+  width: 500px;
+  height: 120px;
+  position: absolute;
+  left: 125px;
+  bottom: 100px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.689);
+}
+
+.midel {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.midel > span {
+  width: 550px;
+  height: 100px;
+  position: absolute;
+  left: 100px;
+}
+.midel > span > h2 {
+  font-size: 2vw;
+  letter-spacing: 20px;
+  transition: 0.4s;
+}
+.midel > span > h2:hover {
+  text-shadow: 5px 5px 4px rgb(78, 78, 242);
+}
+.midel > div:nth-of-type(1) {
+  width: 250px;
+  height: 50px;
+  border: 2px solid rgb(78, 78, 242);
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  border-radius: 50px;
+  transition: 1s;
+}
+.midel > div:nth-of-type(1) > a {
+  color: rgb(78, 78, 242);
+}
+.midel > div:nth-of-type(1):hover {
+  background: linear-gradient(90deg, rgb(95, 9, 121) 29%, rgb(80, 57, 175) 55%, rgb(0, 212, 255) 94%);
+}
+.midel > div:nth-of-type(1):hover > a {
+  color: white;
+}
+.midel > div:nth-of-type(2) {
+  width: 1000px;
+  height: 500px;
+  position: absolute;
+  top: 200px;
+  left: 250px;
+}
+.midel > div:nth-of-type(2) > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.midel > div:nth-of-type(2)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(78, 78, 242, 0.86);
+  z-index: 1;
+}
+.midel > div:nth-of-type(3) {
+  width: 250px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  border: 10px solid white;
+  z-index: 2;
+}
+.midel > div:nth-of-type(3) > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.midel > div:nth-of-type(4) {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  top: 200px;
+  left: 650px;
+  z-index: 3;
+}
+.midel > div:nth-of-type(4) > div:nth-of-type(1) {
+  width: 100px;
+  height: 50px;
+  border: 2px solid gold;
+  color: white;
+  font-size: 2vw;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 20px 20px;
+}
+.midel > div:nth-of-type(4) > h2 {
+  color: white;
+  font-size: 4vw;
+  padding: 20px;
+}
+.midel > div:nth-of-type(4) > p {
+  color: white;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  margin: 5px 20px;
+  text-align: justify;
+  width: 450px;
+}
+.midel > div:nth-of-type(4) > h5 {
+  color: rgba(255, 217, 0, 0.966);
+  font-size: 1vw;
+  word-spacing: 10px;
+  margin: 5px 20px;
+}
+.midel > div:nth-of-type(4) > span {
+  width: 150px;
+  height: 30px;
+  border: 2px solid goldenrod;
+  margin: 35px 20px;
+  transition: 0.4s;
+  box-shadow: 0 0 6px 2px goldenrod;
+}
+.midel > div:nth-of-type(4) > span > a {
+  color: white;
+  text-shadow: 3px 3px 2px goldenrod;
+}
+.midel > div:nth-of-type(4) > span:hover {
+  box-shadow: none;
+}
+.midel > div:nth-of-type(4) > span:hover > a {
+  color: goldenrod;
+  text-shadow: none;
+}
+
+.gallery {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.gallery > span {
+  width: 550px;
+  height: 100px;
+  position: absolute;
+  left: 50px;
+}
+.gallery > span > h2 {
+  font-size: 2vw;
+  letter-spacing: 20px;
+  transition: 0.4s;
+}
+.gallery > span > h2:hover {
+  text-shadow: 5px 5px 4px rgb(78, 78, 242);
+}
+.gallery > div:nth-of-type(1) {
+  width: 250px;
+  height: 50px;
+  border: 2px solid rgb(78, 78, 242);
+  position: absolute;
+  top: 25px;
+  right: 100px;
+  border-radius: 50px;
+  transition: 1s;
+}
+.gallery > div:nth-of-type(1) > a {
+  color: rgb(78, 78, 242);
+}
+.gallery > div:nth-of-type(1):hover {
+  background: linear-gradient(90deg, rgb(95, 9, 121) 29%, rgb(80, 57, 175) 55%, rgb(0, 212, 255) 94%);
+}
+.gallery > div:nth-of-type(1):hover > a {
+  color: white;
+}
+.gallery > .block {
+  width: 100%;
+  height: 200vh;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 5px 5px;
+}
+.gallery > .block > div {
+  border: 1px solid black;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 3s;
+}
+.gallery > .block > div > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery > .block > div::after {
+  content: "RAED MORE";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  color: white;
+  position: absolute;
+  opacity: 0;
+  transition-delay: 3s;
+  font-size: 4vw;
+}
+.gallery > .block > div:hover {
+  transform: perspective(800px) rotate(360deg);
+}
+.gallery > .block > div:hover::after {
+  opacity: 1;
+}
+.gallery > .block > div:nth-of-type(1) {
+  grid-area: 1/1/span 4/span 2;
+}
+.gallery > .block > div:nth-of-type(2) {
+  grid-area: 1/3/span 5/span 2;
+}
+.gallery > .block > div:nth-of-type(3), .gallery > .block > div:nth-of-type(4) {
+  grid-row: 5/span 2;
+}
+.gallery > .block > div:nth-of-type(5) {
+  grid-row: 6/span 2;
+}
+.gallery > .block > div:nth-of-type(6) {
+  grid-row: 6/span 4;
+}
+.gallery > .block > div:nth-of-type(7) {
+  grid-area: 7/1/span 4/span 2;
+}
+.gallery > .block > div:nth-of-type(8) {
+  grid-row: 8/span 2;
+}/*# sourceMappingURL=master.css.map */
